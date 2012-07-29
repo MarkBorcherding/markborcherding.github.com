@@ -1,13 +1,15 @@
-<div class="page-header">
-  <h1>
-    <a href="{{post.url}}">
-      {{ post.title }} {% if post.tagline %} <small>{{ post.tagline }}</small>{% endif %}
-    </a>
-  </h1>
-</div>
+<article class='post'>
+  <header class="page-header">
+    <h1>
+      <a href="{{post.url}}">
+        {{ post.title }} {% if post.tagline %} <small>{{ post.tagline }}</small>{% endif %}
+      </a>
+    </h1>
+  </header>
 
-<div class="row">
-  <div class="span12">
-    {{ post.content }}
+  <div class="row">
+    <div class="span12">
+      {{ post.content }}
+    </div>
   </div>
-</div>
+</article>

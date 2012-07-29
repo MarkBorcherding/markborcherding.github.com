@@ -1,11 +1,14 @@
 @import "compass/css3";
+@import "compass/css3/font-face";
 @import url(http://fonts.googleapis.com/css?family=Molengo);
 
-@mixin font-faces($name, $path){
-  @include font-face($name, font-files("/assets/themes/fooberry/fonts/#{$path}.eot",
-                                       "/assets/themes/fooberry/fonts/#{$path}.svg",
+@mixin font-faces($name, $path, $weight:normal, $style: normal){
+  @include font-face($name, font-files( "/assets/themes/fooberry/fonts/#{$path}.svg",
                                        "/assets/themes/fooberry/fonts/#{$path}.ttf",
-                                       "/assets/themes/fooberry/fonts/#{$path}.woff"));
+                                       "/assets/themes/fooberry/fonts/#{$path}.woff"),
+                                       "/assets/themes/fooberry/fonts/#{$path}.eot",
+                                       $weight,
+                                       $style);
 }
 
 @include font-faces("Anonymous", "anonymous/Anonymous-webfont");
@@ -13,4 +16,10 @@ $mastheadFixedFont: "Anonymous";
 
 @include font-faces("Architects Daughter", "architects-daughter/ArchitectsDaughter-webfont");
 $mastheadScriptFont: "Architects Daughter";
+
+@include font-faces("chivo", "chivo/Chivo-Regular-webfont");
+@include font-faces("chivo", "chivo/Chivo-Black-webfont", bold);
+@include font-faces("chivo", "chivo/Chivo-BlackItalic-webfont", bold, italic);
+@include font-faces("chivo", "chivo/Chivo-BlackItalic-webfont", normal, italic);
+$bodyFont: "chivo";
 

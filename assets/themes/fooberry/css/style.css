@@ -6390,12 +6390,50 @@ a.label:hover, a.badge:hover {
 
 @font-face {
   font-family: "Anonymous";
-  src: url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.eot) format('embedded-opentype'), url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.svg) format('svg'), url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.ttf) format('truetype'), url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.woff) format('woff');
+  src: url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.eot);
+  src: url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.eot?#iefix) format('eot'), url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.svg) format('svg'), url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.ttf) format('truetype'), url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Architects Daughter";
-  src: url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.eot) format('embedded-opentype'), url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.svg) format('svg'), url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.ttf) format('truetype'), url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.woff) format('woff');
+  src: url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.eot);
+  src: url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.eot?#iefix) format('eot'), url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.svg) format('svg'), url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.ttf) format('truetype'), url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "chivo";
+  src: url(/assets/themes/fooberry/fonts/chivo/Chivo-Regular-webfont.eot);
+  src: url(/assets/themes/fooberry/fonts/chivo/Chivo-Regular-webfont.eot?#iefix) format('eot'), url(/assets/themes/fooberry/fonts/chivo/Chivo-Regular-webfont.svg) format('svg'), url(/assets/themes/fooberry/fonts/chivo/Chivo-Regular-webfont.ttf) format('truetype'), url(/assets/themes/fooberry/fonts/chivo/Chivo-Regular-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "chivo";
+  src: url(/assets/themes/fooberry/fonts/chivo/Chivo-Black-webfont.eot);
+  src: url(/assets/themes/fooberry/fonts/chivo/Chivo-Black-webfont.eot?#iefix) format('eot'), url(/assets/themes/fooberry/fonts/chivo/Chivo-Black-webfont.svg) format('svg'), url(/assets/themes/fooberry/fonts/chivo/Chivo-Black-webfont.ttf) format('truetype'), url(/assets/themes/fooberry/fonts/chivo/Chivo-Black-webfont.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "chivo";
+  src: url(/assets/themes/fooberry/fonts/chivo/Chivo-BlackItalic-webfont.eot);
+  src: url(/assets/themes/fooberry/fonts/chivo/Chivo-BlackItalic-webfont.eot?#iefix) format('eot'), url(/assets/themes/fooberry/fonts/chivo/Chivo-BlackItalic-webfont.svg) format('svg'), url(/assets/themes/fooberry/fonts/chivo/Chivo-BlackItalic-webfont.ttf) format('truetype'), url(/assets/themes/fooberry/fonts/chivo/Chivo-BlackItalic-webfont.woff) format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "chivo";
+  src: url(/assets/themes/fooberry/fonts/chivo/Chivo-BlackItalic-webfont.eot);
+  src: url(/assets/themes/fooberry/fonts/chivo/Chivo-BlackItalic-webfont.eot?#iefix) format('eot'), url(/assets/themes/fooberry/fonts/chivo/Chivo-BlackItalic-webfont.svg) format('svg'), url(/assets/themes/fooberry/fonts/chivo/Chivo-BlackItalic-webfont.ttf) format('truetype'), url(/assets/themes/fooberry/fonts/chivo/Chivo-BlackItalic-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: italic;
 }
 
 /* line 1, _fooberry_masthead.scss */
@@ -6479,10 +6517,35 @@ code {
 
 /* line 15, style.scss */
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "chivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  line-height: 24px;
 }
 
-/* line 19, style.scss */
+/* line 20, style.scss */
+li {
+  line-height: 24px;
+}
+
+/* line 24, style.scss */
 h1, h2 {
   color: white;
+}
+/* line 26, style.scss */
+h1 a, h2 a {
+  color: white;
+}
+/* line 28, style.scss */
+h1 a:hover, h2 a:hover {
+  text-decoration: none;
+}
+
+/* line 34, style.scss */
+.page-header {
+  border-color: #3c3c3c;
+}
+
+/* line 38, style.scss */
+article.post {
+  margin-bottom: 60px;
 }

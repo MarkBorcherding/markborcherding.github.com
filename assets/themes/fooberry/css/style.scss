@@ -13,10 +13,34 @@
 
 
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family:  $bodyFont, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+}
+li{
+  line-height:24px;
 }
 
 h1, h2 {
   color: $white;
+  a {
+    color: $white;
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }
+
+.page-header{
+  border-color: lighten($bodyBackground,5%);
+}
+
+article.post{
+  margin-bottom:60px;
+}
+
+ul.posts{
+
+}
+
 
