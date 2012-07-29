@@ -8,7 +8,10 @@ Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.ht
 
 Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
-## Update Author Attributes
+# The Battle for Endor
+
+But with the blast shield down, I can't even see! How am I supposed to fight? The more you tighten your grip, Tarkin, the more star systems will slip through your fingers. No! Alderaan is peaceful. We have no weapons. You can't possibly…
+
 
 ## Example syntax
 
@@ -18,6 +21,18 @@ def foo
   "return #{string}"
 end
 {% endhighlight %}
+
+## A New Hope
+
+I'm surprised you had the courage to take the responsibility yourself. She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Commander. There'll be no one to stop us this time! Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you're going. What?! A tremor in the Force. The last time I felt it was in the presence of my old master. A tremor in the Force. The last time I felt it was in the presence of my old master.
+
+* The more you tighten your grip, Tarkin, the more star systems will slip through your fingers.
+* I'm surprised you had the courage to take the responsibility yourself.
+* You mean it controls your actions?
+
+
+
+## More
 
 In `_config.yml` remember to specify your own data:
 

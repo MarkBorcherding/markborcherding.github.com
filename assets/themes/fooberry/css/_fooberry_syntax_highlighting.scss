@@ -4,8 +4,8 @@ pre {
   @include box-shadow(lighten(black,10%) 4px 4px 15px 4px inset);
 }
 pre, code {
-  background-color: darken($background-color, 3%);
-  border: 1px lighten($background-color,10%) solid;
+  background-color: darken($bodyBackground, 3%);
+  border: 1px lighten($bodyBackground,10%) solid;
   color: $code-color;
 }
 pre {

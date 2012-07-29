@@ -1,6 +1,9 @@
 //$background-color: #272B30;
-//$background-color: #252525;
-$background-color: #2F2F2F;
-$text-color: #C6C6C6;
+
 $accent-color: #E36B23;
 $code-color: #f6f3e8;
+
+// override bootstrap
+$bodyBackground: #2F2F2F;
+$textColor: #C6C6C6;
+$linkColor: #84BCDE;

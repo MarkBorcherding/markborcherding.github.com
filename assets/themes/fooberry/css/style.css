@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Capriola);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 /* line 23, bootstrap/_mixins.scss */
 .clearfix {
   *zoom: 1;
@@ -131,19 +131,19 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  color: #333333;
-  background-color: white;
+  color: #c6c6c6;
+  background-color: #2f2f2f;
 }
 
 /* line 22, bootstrap/_scaffolding.scss */
 a {
-  color: #0088cc;
+  color: #84bcde;
   text-decoration: none;
 }
 
 /* line 26, bootstrap/_scaffolding.scss */
 a:hover {
-  color: #005580;
+  color: #489bce;
   text-decoration: underline;
 }
 
@@ -2379,7 +2379,7 @@ table .span12 {
 .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
   color: white;
   text-decoration: none;
-  background-color: #0088cc;
+  background-color: #84bcde;
 }
 
 /* line 96, bootstrap/_dropdowns.scss */
@@ -2665,28 +2665,28 @@ button.close {
 
 /* line 121, bootstrap/_buttons.scss */
 .btn-primary {
-  background-color: #0073cc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -ms-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0055cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0055cc);
-  background-image: linear-gradient(top, #0088cc, #0055cc);
+  background-color: #84b2de;
+  background-image: -moz-linear-gradient(top, #84bcde, #84a5de);
+  background-image: -ms-linear-gradient(top, #84bcde, #84a5de);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#84bcde), to(#84a5de));
+  background-image: -webkit-linear-gradient(top, #84bcde, #84a5de);
+  background-image: -o-linear-gradient(top, #84bcde, #84a5de);
+  background-image: linear-gradient(top, #84bcde, #84a5de);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0055CC', GradientType=0);
-  border-color: #0055cc #0055cc #003580;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF84BCDE', endColorstr='#FF84A5DE', GradientType=0);
+  border-color: #84a5de #84a5de #487ace;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
-  *background-color: #0055cc;
+  *background-color: #84a5de;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 /* line 456, bootstrap/_mixins.scss */
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-  background-color: #0055cc;
-  *background-color: #004ab3;
+  background-color: #84a5de;
+  *background-color: #7097d9;
 }
 /* line 462, bootstrap/_mixins.scss */
 .btn-primary:active, .btn-primary.active {
-  background-color: #004099 \9;
+  background-color: #5c88d3 \9;
 }
 
 /* line 125, bootstrap/_buttons.scss */
@@ -2987,7 +2987,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 /* line 121, bootstrap/_button-groups.scss */
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0055cc;
+  background-color: #84a5de;
 }
 /* line 124, bootstrap/_button-groups.scss */
 .btn-group.open .btn-warning.dropdown-toggle {
@@ -3180,7 +3180,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .nav-list > .active > a, .nav-list > .active > a:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+  background-color: #84bcde;
 }
 
 /* line 67, bootstrap/_navs.scss */
@@ -3274,7 +3274,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 /* line 139, bootstrap/_navs.scss */
 .nav-pills .active > a, .nav-pills .active > a:hover {
   color: white;
-  background-color: #0088cc;
+  background-color: #84bcde;
 }
 
 /* line 150, bootstrap/_navs.scss */
@@ -3346,15 +3346,15 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 
 /* line 199, bootstrap/_navs.scss */
 .nav-tabs .dropdown-toggle .caret, .nav-pills .dropdown-toggle .caret {
-  border-top-color: #0088cc;
-  border-bottom-color: #0088cc;
+  border-top-color: #84bcde;
+  border-bottom-color: #84bcde;
   margin-top: 6px;
 }
 
 /* line 204, bootstrap/_navs.scss */
 .nav-tabs .dropdown-toggle:hover .caret, .nav-pills .dropdown-toggle:hover .caret {
-  border-top-color: #005580;
-  border-bottom-color: #005580;
+  border-top-color: #489bce;
+  border-bottom-color: #489bce;
 }
 
 /* line 211, bootstrap/_navs.scss */
@@ -4476,7 +4476,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 
 /* line 36, bootstrap/_thumbnails.scss */
 a.thumbnail:hover {
-  border-color: #0088cc;
+  border-color: #84bcde;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -6392,9 +6392,10 @@ a.label:hover, a.badge:hover {
 .masthead {
   margin-top: 10px;
   color: #e36b23;
-  font-family: 'Capriola', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
-/* line 5, _fooberry_masthead.scss */
+/* line 6, _fooberry_masthead.scss */
 .masthead .title {
   font-size: 100px;
   line-height: 100px;
@@ -6430,14 +6431,12 @@ code {
   border-width: 1px;
 }
 
-/* line 14, style.scss */
+/* line 15, style.scss */
 body {
-  background-color: #2f2f2f;
-  color: #c6c6c6;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-/* line 21, style.scss */
+/* line 19, style.scss */
 h1, h2 {
   color: white;
 }
