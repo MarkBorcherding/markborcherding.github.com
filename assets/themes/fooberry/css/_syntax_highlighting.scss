@@ -1,12 +1,12 @@
-// Syntax higlighting
-pre {
-  border: lighten($background-color,10%) solid;
-  border-width: 1px 0px;
-  @include border-radius(0px);
-  code {
+.highlight {
+  pre {
+    padding: 25px;
+    border: lighten($background-color,10%) solid;
+    border-width: 1px 0px;
   }
 }
 
 code {
   background-color: lighten($background-color, 5%);
+  color: $code-color;
 }
