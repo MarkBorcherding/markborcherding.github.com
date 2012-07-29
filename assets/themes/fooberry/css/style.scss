@@ -1,8 +1,15 @@
 @import "variables";
 @import "bootstrap";
+@import "bootstrap-responsive";
 @import "bootswatch";
 
-$background-color: #272B30;
+
+
+// Theme Imports
+@import "fooberry_variables";
+@import "fooberry_syntax_highlighting";
+@import "fooberry_navigation";
+
 
 body {
   background-color: $background-color;
@@ -10,17 +17,3 @@ body {
 }
 
 
-// Syntax higlighting
-pre {
-  //background-color: $background-color;
-  background-color: lighten($background-color, 5%);
-  border: lighten($background-color,10%) solid;
-  border-width: 1px 0px;
-  @include border-radius(0px);
-  code {
-  }
-}
-
-code {
-  background-color: lighten($background-color, 10%);
-}
