@@ -1,0 +1,9 @@
+.navbar{
+  .navbar-inner{
+    background: $bodyBackground;
+    @include box-shadow(black 0px 0px 0px); // reset the twitter nav style
+    .nav {
+      float:right;
+    }
+  }
+}

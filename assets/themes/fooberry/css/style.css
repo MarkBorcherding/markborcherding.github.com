@@ -6391,13 +6391,31 @@ a.label:hover, a.badge:hover {
 /* line 1, _fooberry_masthead.scss */
 .masthead {
   margin-top: 10px;
-  color: #e36b23;
-  font-weight: 700;
 }
-/* line 5, _fooberry_masthead.scss */
+/* line 4, _fooberry_masthead.scss */
+.masthead .title a {
+  color: #e36b23;
+}
+/* line 6, _fooberry_masthead.scss */
+.masthead .title a:hover {
+  text-decoration: none;
+}
+/* line 9, _fooberry_masthead.scss */
 .masthead .title {
   font-size: 100px;
   line-height: 100px;
+}
+
+/* line 2, _fooberry_navigation.scss */
+.navbar .navbar-inner {
+  background: #2f2f2f;
+  -webkit-box-shadow: black 0px 0px 0px;
+  -moz-box-shadow: black 0px 0px 0px;
+  box-shadow: black 0px 0px 0px;
+}
+/* line 5, _fooberry_navigation.scss */
+.navbar .navbar-inner .nav {
+  float: right;
 }
 
 /* line 2, _fooberry_syntax_highlighting.scss */

@@ -1,7 +1,11 @@
 .masthead {
   margin-top: 10px;
-  color: $accent-color;
-  font-weight: 700;
+  .title{
+    a{
+      color: $accent-color;
+      &:hover { text-decoration: none; }
+    }
+  }
   .title {
     font-size: 100px;
     line-height: 100px;
