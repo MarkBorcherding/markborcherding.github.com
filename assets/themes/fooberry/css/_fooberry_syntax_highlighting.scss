@@ -1,8 +1,16 @@
-// Syntax higlighting
+pre, code {
+  background-color: darken($background-color, 3%);
+  border: 1px lighten($background-color,10%) solid;
+  color: $code-color;
+}
 pre {
-  @include border-radius(0px);
+  padding: 25px;
+  border-width: 1px 0px;
+  code {
+    font-size: 16px;
+  }
 }
 
-pre,code {
-  background-color: darken($background-color, 5%);
+code {
+  border-width: 1px;
 }
