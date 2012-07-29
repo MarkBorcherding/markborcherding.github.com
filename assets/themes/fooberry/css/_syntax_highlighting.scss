@@ -1,6 +1,5 @@
 // Syntax higlighting
 pre {
-  //background-color: $background-color;
   border: lighten($background-color,10%) solid;
   border-width: 1px 0px;
   @include border-radius(0px);

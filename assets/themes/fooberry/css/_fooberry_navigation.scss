@@ -1,5 +1,7 @@
 .navbar{
+  .container {
+    width:inherit;
+  }
   .navbar-inner{
-    background-color: $background-color;
   }
 }

@@ -10,6 +10,15 @@ Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllb
 
 ## Update Author Attributes
 
+## Example syntax
+
+{% highlight ruby %}
+def foo
+  hook :orm
+  "return #{string}"
+end
+{% endhighlight %}
+
 In `_config.yml` remember to specify your own data:
 
     title : My Blog =)
