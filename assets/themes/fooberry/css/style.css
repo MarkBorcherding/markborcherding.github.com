@@ -6388,22 +6388,51 @@ a.label:hover, a.badge:hover {
   color: #FF73FD;
 }
 
+@font-face {
+  font-family: "Anonymous";
+  src: url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.eot) format('embedded-opentype'), url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.svg) format('svg'), url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.ttf) format('truetype'), url(/assets/themes/fooberry/fonts/anonymous/Anonymous-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: "Architects Daughter";
+  src: url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.eot) format('embedded-opentype'), url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.svg) format('svg'), url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.ttf) format('truetype'), url(/assets/themes/fooberry/fonts/architects-daughter/ArchitectsDaughter-webfont.woff) format('woff');
+}
+
 /* line 1, _fooberry_masthead.scss */
 .masthead {
   margin-top: 10px;
 }
-/* line 4, _fooberry_masthead.scss */
-.masthead .title a {
-  color: #e36b23;
+/* line 3, _fooberry_masthead.scss */
+.masthead .title {
+  font-size: 100px;
+  line-height: 75px;
+  margin-top: 25px;
 }
-/* line 6, _fooberry_masthead.scss */
+/* line 7, _fooberry_masthead.scss */
+.masthead .title .foo {
+  font-family: "Anonymous";
+  color: #a3a3a3;
+}
+/* line 11, _fooberry_masthead.scss */
+.masthead .title .operator {
+  font-family: "Anonymous";
+  color: #84bcde;
+}
+/* line 15, _fooberry_masthead.scss */
+.masthead .title .berry {
+  font-family: "Architects Daughter";
+  color: #BE5353;
+}
+/* line 20, _fooberry_masthead.scss */
 .masthead .title a:hover {
   text-decoration: none;
 }
-/* line 9, _fooberry_masthead.scss */
-.masthead .title {
-  font-size: 100px;
-  line-height: 100px;
+/* line 23, _fooberry_masthead.scss */
+.masthead .tagline {
+  padding-left: 80px;
+  background: #3c3c3c;
+  font-size: 23px;
+  line-height: 29px;
 }
 
 /* line 2, _fooberry_navigation.scss */

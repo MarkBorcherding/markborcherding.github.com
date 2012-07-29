@@ -1,15 +1,29 @@
 .masthead {
   margin-top: 10px;
   .title{
+    font-size: 100px;
+    line-height: 75px;
+    margin-top: 25px;
+    .foo{
+      font-family: $mastheadFixedFont;
+      color: #a3a3a3;
+    }
+    .operator{
+      font-family: $mastheadFixedFont;
+      color: $linkColor;
+    }
+    .berry {
+      font-family: $mastheadScriptFont;
+      color: #BE5353;
+    }
     a{
-      color: $accent-color;
       &:hover { text-decoration: none; }
     }
   }
-  .title {
-    font-size: 100px;
-    line-height: 100px;
-  }
   .tagline {
+    padding-left: 80px;
+    background: lighten($bodyBackground,5%);
+    font-size: 23px;
+    line-height: 29px;
   }
 }

@@ -10,7 +10,7 @@ markdown: maruku
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Fooberry
+title : fooberry
 tagline: Sweetness without context
 author :
   name : Mark Borcherding

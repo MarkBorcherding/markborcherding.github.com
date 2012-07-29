@@ -1,1 +1,16 @@
+@import "compass/css3";
 @import url(http://fonts.googleapis.com/css?family=Molengo);
+
+@mixin font-faces($name, $path){
+  @include font-face($name, font-files("/assets/themes/fooberry/fonts/#{$path}.eot",
+                                       "/assets/themes/fooberry/fonts/#{$path}.svg",
+                                       "/assets/themes/fooberry/fonts/#{$path}.ttf",
+                                       "/assets/themes/fooberry/fonts/#{$path}.woff"));
+}
+
+@include font-faces("Anonymous", "anonymous/Anonymous-webfont");
+$mastheadFixedFont: "Anonymous";
+
+@include font-faces("Architects Daughter", "architects-daughter/ArchitectsDaughter-webfont");
+$mastheadScriptFont: "Architects Daughter";
+
