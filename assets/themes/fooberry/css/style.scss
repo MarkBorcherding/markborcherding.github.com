@@ -1,0 +1,26 @@
+@import "variables";
+@import "bootstrap";
+@import "bootswatch";
+
+$background-color: #272B30;
+
+body {
+  background-color: $background-color;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+// Syntax higlighting
+pre {
+  //background-color: $background-color;
+  background-color: lighten($background-color, 5%);
+  border: lighten($background-color,10%) solid;
+  border-width: 1px 0px;
+  @include border-radius(0px);
+  code {
+  }
+}
+
+code {
+  background-color: lighten($background-color, 10%);
+}
