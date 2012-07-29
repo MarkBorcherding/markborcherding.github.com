@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Molengo);
 /* line 23, bootstrap/_mixins.scss */
 .clearfix {
   *zoom: 1;
@@ -6392,10 +6392,9 @@ a.label:hover, a.badge:hover {
 .masthead {
   margin-top: 10px;
   color: #e36b23;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
-/* line 6, _fooberry_masthead.scss */
+/* line 5, _fooberry_masthead.scss */
 .masthead .title {
   font-size: 100px;
   line-height: 100px;
@@ -6433,7 +6432,7 @@ code {
 
 /* line 15, style.scss */
 body {
-  font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 /* line 19, style.scss */
