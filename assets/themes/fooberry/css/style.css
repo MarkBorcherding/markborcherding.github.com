@@ -4496,7 +4496,7 @@ a.thumbnail:hover {
 }
 
 /* line 5, bootstrap/_labels-badges.scss */
-.label, .badge {
+.label, .meta .tags .tag_box li, .badge {
   font-size: 10.998px;
   font-weight: bold;
   line-height: 14px;
@@ -4508,7 +4508,7 @@ a.thumbnail:hover {
 }
 
 /* line 16, bootstrap/_labels-badges.scss */
-.label {
+.label, .meta .tags .tag_box li {
   padding: 1px 4px 2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -4561,12 +4561,12 @@ a.label:hover, a.badge:hover {
 }
 
 /* line 46, bootstrap/_labels-badges.scss */
-.label-info, .badge-info {
+.label-info, .meta .tags .tag_box li, .badge-info {
   background-color: #3a87ad;
 }
 
 /* line 47, bootstrap/_labels-badges.scss */
-.label-info[href], .badge-info[href] {
+.label-info[href], .meta .tags .tag_box li[href], .badge-info[href] {
   background-color: #2d6987;
 }
 
@@ -6515,37 +6515,82 @@ code {
   border-width: 1px;
 }
 
-/* line 15, style.scss */
+/* line 1, _fooberry_posts.scss */
+.meta {
+  background-color: #272727;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 27px;
+  padding: 0px 5px;
+}
+/* line 8, _fooberry_posts.scss */
+.meta .tags {
+  width: 1000px;
+}
+/* line 10, _fooberry_posts.scss */
+.meta .tags span {
+  display: block;
+  float: left;
+}
+/* line 14, _fooberry_posts.scss */
+.meta .tags .tag_box {
+  margin: 0px;
+  float: left;
+  list-style: none;
+}
+/* line 18, _fooberry_posts.scss */
+.meta .tags .tag_box li {
+  float: left;
+  margin: 5px;
+}
+/* line 23, _fooberry_posts.scss */
+.meta .tags .tag_box li a {
+  color: white;
+}
+/* line 24, _fooberry_posts.scss */
+.meta .tags .tag_box li a:hover {
+  text-decoration: none;
+}
+/* line 25, _fooberry_posts.scss */
+.meta .tags .tag_box li span {
+  display: none;
+}
+
+/* line 16, style.scss */
 body {
   font-family: "chivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 19px;
   line-height: 24px;
 }
 
-/* line 20, style.scss */
+/* line 21, style.scss */
 li {
   line-height: 24px;
 }
 
-/* line 24, style.scss */
+/* line 25, style.scss */
 h1, h2 {
   color: white;
 }
-/* line 26, style.scss */
+/* line 27, style.scss */
 h1 a, h2 a {
   color: white;
 }
-/* line 28, style.scss */
+/* line 29, style.scss */
 h1 a:hover, h2 a:hover {
   text-decoration: none;
 }
 
-/* line 34, style.scss */
+/* line 35, style.scss */
 .page-header {
   border-color: #3c3c3c;
 }
 
-/* line 38, style.scss */
+/* line 39, style.scss */
 article.post {
   margin-bottom: 60px;
 }

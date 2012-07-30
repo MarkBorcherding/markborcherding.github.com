@@ -1,0 +1,29 @@
+.meta{
+  background-color: darken($bodyBackground, 3%);
+  @include border-radius($usualRadius);
+  font-size: 13px;
+  line-height: 27px;
+  padding: 0px 5px;
+
+  .tags{
+    width: 1000px;
+    span{
+      display:block;
+      float: left;
+    }
+    .tag_box{
+      margin: 0px;
+      float: left;
+      list-style: none;
+      li{
+        float: left;
+        margin: 5px;
+        @extend .label;
+        @extend .label-info;
+        a { color: $white }
+        a:hover{ text-decoration:none; }
+        span{ display: none; }
+      }
+    }
+  }
+}
