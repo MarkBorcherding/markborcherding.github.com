@@ -7752,13 +7752,3 @@ h1 a, h2 a {
 h1 a:hover, h2 a:hover {
   text-decoration: none;
 }
-
-/* line 36, style.scss */
-.page-header {
-  border-color: #3c3c3c;
-}
-
-/* line 40, style.scss */
-article.post {
-  margin-bottom: 60px;
-}
