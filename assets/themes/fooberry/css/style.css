@@ -7670,7 +7670,7 @@ code {
 }
 /* line 3, _fooberry_posts.scss */
 .post header {
-  border-width: 0px  0px 1px 0px;
+  border-width: 0px  0px 0px 0px;
   border-style: solid;
   border-color: #3c3c3c;
   padding-bottom: 0px;
