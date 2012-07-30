@@ -6,27 +6,29 @@
       <small>{{ page.tagline }}</small>
       {{ endif }}
     </h1>
+
+    <section class="meta">
+      <div class="date">
+        <span>Published: </span>
+        <span>{{ page.date | date_to_long_string }}</span>
+      </div>
+
+      {% unless page.tags == empty %}
+      <div class='tags'>
+        <span>Tags:</span>
+        <ul class="tag_box">
+          {% assign tags_list = page.tags %}
+          {% include JB/tags_list %}
+        </ul>
+      </div>
+      <div class='clearfix'></div>
+      {% endunless %}
+    </section>
+
   </header>
 
   {{ content }}
 
-  <section class="meta">
-    <div class="date">
-      <span>Published: </span>
-      <span>{{ page.date | date_to_long_string }}</span>
-    </div>
-
-    {% unless page.tags == empty %}
-    <div class='tags'>
-      <span>Tags:</span>
-      <ul class="tag_box">
-        {% assign tags_list = page.tags %}
-        {% include JB/tags_list %}
-      </ul>
-    </div>
-    <div class='clearfix'></div>
-    {% endunless %}
-  </section>
 
   {% include JB/comments %}
 </article>

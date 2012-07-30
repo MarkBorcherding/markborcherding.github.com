@@ -1,23 +1,35 @@
+.post header{
+  border-width: 0px;
+  padding-bottom: 0px;
+}
 .meta{
+
   background-color: darken($bodyBackground, 3%);
   @include border-radius($usualRadius);
   font-size: 13px;
   line-height: 27px;
   padding: 0px 5px;
-
+  margin: 0px 10px 10px 0px;
+  position: relative;
   .tags{
-    width: 1000px;
+    position: absolute;
+    padding-left: 200px;
+    top: 0px;
+    width: 100%;
+
     span{
       display:block;
       float: left;
     }
     .tag_box{
+      position: absolute;
+      padding-left: 40px;
       margin: 0px;
-      float: left;
       list-style: none;
       li{
         float: left;
         margin: 5px;
+        background-color: lighten($bodyBackground, 10%);
         @extend .label;
         @extend .label-info;
         a { color: $white }
