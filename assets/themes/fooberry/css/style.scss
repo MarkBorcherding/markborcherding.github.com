@@ -43,9 +43,8 @@ ul.posts{
   li.post{
     clear: both;
     display: block;
-    .link { float: left; }
-    .post-date, .tags, .link {
-      margin: 0px 5px;
+    .link {
+      float: left;
     }
   }
   li.post:nth-child(even) { background-color: darken($bodyBackground, 3%); }

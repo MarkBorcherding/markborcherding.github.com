@@ -17,8 +17,15 @@ article.post{
   height: 27px;
   padding: 0px 10px;
   margin: 5px 0px;
+  .tags {
+
+  }
 }
 
+
+li.post .link, .post-date, .tags {
+  margin: 0px 10px;
+}
 
 .post-date{
   float: left;
