@@ -1,4 +1,5 @@
 .navbar{
+  font-size: 13px;
   .navbar-inner{
     background: $bodyBackground;
     @include box-shadow(black 0px 0px 0px); // reset the twitter nav style

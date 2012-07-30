@@ -8,11 +8,8 @@
 <ul class="posts">
   {% for post in site.posts offset:2 %}
   <li class='post'>
-    <span class='icon-calendar'></span>
-    <span>
-      {{ post.date | date_to_string }}
-    </span>
-    <a class='post-link' href="{{ BASE_PATH }}{{ post.url }}">
+    {% include themes/fooberry/postdate.html %}
+    <a class='link' href="{{ BASE_PATH }}{{ post.url }}">
       {{ post.title }}
     </a>
     {% include themes/fooberry/taglist.html %}

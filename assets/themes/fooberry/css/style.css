@@ -7622,14 +7622,18 @@ ul.icons li .icon-large:before {
   line-height: 29px;
 }
 
-/* line 2, _fooberry_navigation.scss */
+/* line 1, _fooberry_navigation.scss */
+.navbar {
+  font-size: 13px;
+}
+/* line 3, _fooberry_navigation.scss */
 .navbar .navbar-inner {
   background: #2f2f2f;
   -webkit-box-shadow: black 0px 0px 0px;
   -moz-box-shadow: black 0px 0px 0px;
   box-shadow: black 0px 0px 0px;
 }
-/* line 5, _fooberry_navigation.scss */
+/* line 6, _fooberry_navigation.scss */
 .navbar .navbar-inner .nav {
   float: right;
 }
@@ -7763,9 +7767,12 @@ ul.posts {
   margin-bottom: 40px;
 }
 /* line 44, style.scss */
-ul.posts li.post span, ul.posts li.post a.post-link {
+ul.posts li.post span, ul.posts li.post a.link {
   line-height: 27px;
   float: left;
+}
+/* line 48, style.scss */
+ul.posts li.post .date, ul.posts li.post .tags, ul.posts li.post .link {
   margin: 0px 5px;
 }
 /* line 50, style.scss */

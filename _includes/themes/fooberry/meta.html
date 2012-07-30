@@ -1,9 +1,6 @@
 <section class="meta">
-  <div class="date">
-    <span class="icon-calendar"></span>
-    <span>{{ post.date | date_to_long_string }}</span>
-  </div>
-
+  {% include themes/fooberry/postdate.html %}
   {% include themes/fooberry/taglist.html %}
+  <div class='clearfix'></div>
 </section>
 

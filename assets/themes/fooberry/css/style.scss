@@ -41,11 +41,11 @@ ul.posts{
   margin: 0px;
   margin-bottom: 40px;
   li.post{
-    span, a.post-link {
+    span, a.link {
       line-height: 27px;
       float:left;
-      margin: 0px 5px;
     }
+    .date, .tags, .link { margin: 0px 5px; }
   }
   li.post:nth-child(even) { background-color: darken($bodyBackground, 3%); }
 }
