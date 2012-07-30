@@ -2,6 +2,7 @@
   border-width: 0px;
   padding-bottom: 0px;
 }
+
 .meta{
 
   background-color: darken($bodyBackground, 3%);
@@ -10,25 +11,23 @@
   line-height: 27px;
   padding: 0px 5px;
   margin: 0px 10px 10px 0px;
-  position: relative;
-  .tags{
-    position: absolute;
-    padding-left: 200px;
-    top: 0px;
-    width: 100%;
 
-    span{
-      display:block;
-      float: left;
-    }
+  .date{
+    float: left;
+  }
+  .tags{
+    padding-left: 20px;
+    float: left;
+    position: relative;
     .tag_box{
-      position: absolute;
-      padding-left: 40px;
-      margin: 0px;
       list-style: none;
+      margin: 0px 0px 0px 15px;
+      top: 0px;
+      width: 500px;
+      position: absolute;
       li{
         float: left;
-        margin: 5px;
+        margin: 5px 2px;
         background-color: lighten($bodyBackground, 10%);
         @extend .label;
         @extend .label-info;
