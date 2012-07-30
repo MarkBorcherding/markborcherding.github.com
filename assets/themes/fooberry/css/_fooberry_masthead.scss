@@ -3,6 +3,10 @@
   .title{
     font-size: 100px;
     line-height: 75px;
+    @media (max-width: 480px) {
+      font-size: 45px;
+      line-height: 45px;
+    }
     margin-top: 25px;
     .foo{
       font-family: $mastheadFixedFont;
@@ -24,6 +28,11 @@
     padding-left: 80px;
     background: lighten($bodyBackground,5%);
     font-size: 23px;
+    @media (max-width: 480px) {
+      font-size: 15px;
+      line-height: 16px;
+      padding-left: 10px;
+    }
     line-height: 29px;
   }
 }

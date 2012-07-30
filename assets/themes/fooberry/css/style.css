@@ -7595,31 +7595,46 @@ ul.icons li .icon-large:before {
   line-height: 75px;
   margin-top: 25px;
 }
-/* line 7, _fooberry_masthead.scss */
+@media (max-width: 480px) {
+  /* line 3, _fooberry_masthead.scss */
+  .masthead .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+/* line 11, _fooberry_masthead.scss */
 .masthead .title .foo {
   font-family: "Anonymous";
   color: #a3a3a3;
 }
-/* line 11, _fooberry_masthead.scss */
+/* line 15, _fooberry_masthead.scss */
 .masthead .title .operator {
   font-family: "Anonymous";
   color: #84bcde;
 }
-/* line 15, _fooberry_masthead.scss */
+/* line 19, _fooberry_masthead.scss */
 .masthead .title .berry {
   font-family: "Architects Daughter";
   color: #BE5353;
 }
-/* line 20, _fooberry_masthead.scss */
+/* line 24, _fooberry_masthead.scss */
 .masthead .title a:hover {
   text-decoration: none;
 }
-/* line 23, _fooberry_masthead.scss */
+/* line 27, _fooberry_masthead.scss */
 .masthead .tagline {
   padding-left: 80px;
   background: #3c3c3c;
   font-size: 23px;
   line-height: 29px;
+}
+@media (max-width: 480px) {
+  /* line 27, _fooberry_masthead.scss */
+  .masthead .tagline {
+    font-size: 15px;
+    line-height: 16px;
+    padding-left: 10px;
+  }
 }
 
 /* line 1, _fooberry_navigation.scss */
