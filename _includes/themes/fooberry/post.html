@@ -1,34 +1,15 @@
 <article class='post'>
-  <header class="page-header">
+
+  <header class="post-header">
     <h1>
-      {{ page.title }}
-      {{ if page.tagline }}
-      <small>{{ page.tagline }}</small>
+      {{ post.title }}
+      {{ if post.tagline }}
+      <small>{{ post.tagline }}</small>
       {{ endif }}
     </h1>
-
-    <section class="meta">
-      <div class="date">
-        <span class="icon-calendar"></span>
-        <span>{{ page.date | date_to_long_string }}</span>
-      </div>
-
-      {% unless page.tags == empty %}
-      <div class='tags'>
-        <span class="icon-tag"></span>
-        <ul class="tag_box">
-          {% assign tags_list = page.tags %}
-          {% include JB/tags_list %}
-        </ul>
-      </div>
-      <div class='clearfix'></div>
-      {% endunless %}
-    </section>
-
+    {% assign post = page %}
+    {% include themes/fooberry/meta.html %}
   </header>
-
   {{ content }}
-
-
   {% include JB/comments %}
 </article>
