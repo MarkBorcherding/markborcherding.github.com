@@ -10,7 +10,6 @@ article.post{
 }
 
 .meta{
-
   background-color: darken($bodyBackground, 3%);
   @include border-radius($usualRadius);
   font-size: 13px;
@@ -18,27 +17,24 @@ article.post{
   height: 27px;
   padding: 0px 10px;
   margin: 5px 0px;
-
-
-  .date{
-    float: left;
-  }
 }
 
 
-.tags{
-  padding-left: 20px;
+.post-date{
   float: left;
-  position: relative;
+}
+.tags{
+  float: left;
+  i {
+    display: inline-block;
+  }
   .tag_box{
     list-style: none;
-    margin: 0px 0px 0px 15px;
-    top: 0px;
-    width: 500px;
-    position: absolute;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
     li{
-      float: left;
-      margin: 5px 2px;
+      display: inline-block;
+      margin: 0px 2px;
       background-color: lighten($bodyBackground, 10%);
       @extend .label;
       @extend .label-info;
