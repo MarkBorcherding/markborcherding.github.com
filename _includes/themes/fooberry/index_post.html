@@ -1,16 +1,11 @@
 <article class='post'>
-  <header class="page-header">
+  <header class="post-header">
     <h1>
       <a href="{{post.url}}">
         {{ post.title }} {% if post.tagline %} <small>{{ post.tagline }}</small>{% endif %}
       </a>
     </h1>
-    {% include themes/fooberry/meta.html %}
   </header>
-
-  <div class="row">
-    <div class="span12">
-      {{ post.content }}
-    </div>
-  </div>
+  {{ post.content }}
+  {% include themes/fooberry/meta.html %}
 </article>

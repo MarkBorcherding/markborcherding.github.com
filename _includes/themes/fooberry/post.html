@@ -1,5 +1,5 @@
 <article class='post'>
-
+  {% assign post = page %}
   <header class="post-header">
     <h1>
       {{ post.title }}
@@ -8,8 +8,8 @@
       {{ endif }}
     </h1>
     {% assign post = page %}
-    {% include themes/fooberry/meta.html %}
   </header>
   {{ content }}
+  {% include themes/fooberry/meta.html %}
   {% include JB/comments %}
 </article>
