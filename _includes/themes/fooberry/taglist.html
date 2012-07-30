@@ -1,0 +1,10 @@
+  {% unless post.tags == empty %}
+  <div class='tags'>
+    <span class="icon-tag"></span>
+    <ul class="tag_box">
+      {% assign tags_list = post.tags %}
+      {% include JB/tags_list %}
+    </ul>
+  </div>
+  <div class='clearfix'></div>
+  {% endunless %}

@@ -2,15 +2,20 @@
 {% include themes/fooberry/index_post.html %}
 {% endfor %}
 
+
+
+<h5>Older Posts</h5>
 <ul class="posts">
   {% for post in site.posts offset:2 %}
-  <li>
+  <li class='post'>
+    <span class='icon-calendar'></span>
     <span>
       {{ post.date | date_to_string }}
-    </span> &raquo;
-    <a href="{{ BASE_PATH }}{{ post.url }}">
+    </span>
+    <a class='post-link' href="{{ BASE_PATH }}{{ post.url }}">
       {{ post.title }}
     </a>
+    {% include themes/fooberry/taglist.html %}
   </li>
   {% endfor %}
 </ul>

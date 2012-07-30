@@ -1,4 +1,4 @@
-.post{
+article.post{
   margin-bottom:60px;
   header{
     border-width: 0px  0px 0px 0px;
@@ -23,26 +23,28 @@
   .date{
     float: left;
   }
-  .tags{
-    padding-left: 20px;
-    float: left;
-    position: relative;
-    .tag_box{
-      list-style: none;
-      margin: 0px 0px 0px 15px;
-      top: 0px;
-      width: 500px;
-      position: absolute;
-      li{
-        float: left;
-        margin: 5px 2px;
-        background-color: lighten($bodyBackground, 10%);
-        @extend .label;
-        @extend .label-info;
-        a { color: $white }
-        a:hover{ text-decoration:none; }
-        span{ display: none; }
-      }
+}
+
+
+.tags{
+  padding-left: 20px;
+  float: left;
+  position: relative;
+  .tag_box{
+    list-style: none;
+    margin: 0px 0px 0px 15px;
+    top: 0px;
+    width: 500px;
+    position: absolute;
+    li{
+      float: left;
+      margin: 5px 2px;
+      background-color: lighten($bodyBackground, 10%);
+      @extend .label;
+      @extend .label-info;
+      a { color: $white }
+      a:hover{ text-decoration:none; }
+      span{ display: none; }
     }
   }
 }

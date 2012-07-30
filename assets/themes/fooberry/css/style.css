@@ -4496,7 +4496,7 @@ a.thumbnail:hover {
 }
 
 /* line 5, bootstrap/_labels-badges.scss */
-.label, .meta .tags .tag_box li, .badge {
+.label, .tags .tag_box li, .badge {
   font-size: 10.998px;
   font-weight: bold;
   line-height: 14px;
@@ -4508,7 +4508,7 @@ a.thumbnail:hover {
 }
 
 /* line 16, bootstrap/_labels-badges.scss */
-.label, .meta .tags .tag_box li {
+.label, .tags .tag_box li {
   padding: 1px 4px 2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -4561,12 +4561,12 @@ a.label:hover, a.badge:hover {
 }
 
 /* line 46, bootstrap/_labels-badges.scss */
-.label-info, .meta .tags .tag_box li, .badge-info {
+.label-info, .tags .tag_box li, .badge-info {
   background-color: #3a87ad;
 }
 
 /* line 47, bootstrap/_labels-badges.scss */
-.label-info[href], .meta .tags .tag_box li[href], .badge-info[href] {
+.label-info[href], .tags .tag_box li[href], .badge-info[href] {
   background-color: #2d6987;
 }
 
@@ -7665,11 +7665,11 @@ code {
 }
 
 /* line 1, _fooberry_posts.scss */
-.post {
+article.post {
   margin-bottom: 60px;
 }
 /* line 3, _fooberry_posts.scss */
-.post header {
+article.post header {
   border-width: 0px  0px 0px 0px;
   border-style: solid;
   border-color: #3c3c3c;
@@ -7695,36 +7695,37 @@ code {
 .meta .date {
   float: left;
 }
-/* line 26, _fooberry_posts.scss */
-.meta .tags {
+
+/* line 29, _fooberry_posts.scss */
+.tags {
   padding-left: 20px;
   float: left;
   position: relative;
 }
-/* line 30, _fooberry_posts.scss */
-.meta .tags .tag_box {
+/* line 33, _fooberry_posts.scss */
+.tags .tag_box {
   list-style: none;
   margin: 0px 0px 0px 15px;
   top: 0px;
   width: 500px;
   position: absolute;
 }
-/* line 36, _fooberry_posts.scss */
-.meta .tags .tag_box li {
+/* line 39, _fooberry_posts.scss */
+.tags .tag_box li {
   float: left;
   margin: 5px 2px;
   background-color: #494949;
 }
-/* line 42, _fooberry_posts.scss */
-.meta .tags .tag_box li a {
+/* line 45, _fooberry_posts.scss */
+.tags .tag_box li a {
   color: white;
 }
-/* line 43, _fooberry_posts.scss */
-.meta .tags .tag_box li a:hover {
+/* line 46, _fooberry_posts.scss */
+.tags .tag_box li a:hover {
   text-decoration: none;
 }
-/* line 44, _fooberry_posts.scss */
-.meta .tags .tag_box li span {
+/* line 47, _fooberry_posts.scss */
+.tags .tag_box li span {
   display: none;
 }
 
@@ -7751,4 +7752,23 @@ h1 a, h2 a {
 /* line 30, style.scss */
 h1 a:hover, h2 a:hover {
   text-decoration: none;
+}
+
+/* line 37, style.scss */
+ul.posts {
+  font-size: 13px;
+  line-height: 27px;
+  list-style: none;
+  margin: 0px;
+  margin-bottom: 40px;
+}
+/* line 44, style.scss */
+ul.posts li.post span, ul.posts li.post a.post-link {
+  line-height: 27px;
+  float: left;
+  margin: 0px 5px;
+}
+/* line 50, style.scss */
+ul.posts li.post:nth-child(even) {
+  background-color: #272727;
 }
