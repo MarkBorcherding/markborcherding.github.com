@@ -39,11 +39,11 @@ to inject services into my controller. Why not inject this class too?
 Here's where I don't know if I'm jacking it all up. I'm not sure if this should be injected as a value or a service. It makes sense to me
 to be either since it is a constant...but happens to be a function. So here it goes.
 
-I created a new value service (using the helpers from my `angular-seed` project).
+I created a new factory service (using the helpers from my `angular-seed` project).
 
 ```CoffeeScript
 
-value 'Map',
+factory 'Map', ->
   class Map
     constructor: (data) ->
       # setup the map
@@ -63,5 +63,5 @@ controller 'MyCtrl', ($scope, Map) ->
 ```
 
 Done. Is that actually a service? I don't want the constructor function invoked when it injects, so that's why I ended up making it a
-value rather than a service. Right now it's working, and when testing the controller that class is easy to mock so I'm happy so far.
+factory rather than a service. Right now it's working, and when testing the controller that class is easy to mock so I'm happy so far.
 
