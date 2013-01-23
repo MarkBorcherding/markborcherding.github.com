@@ -65,3 +65,4 @@ controller 'MyCtrl', ($scope, Map) ->
 Done. Is that actually a service? I don't want the constructor function invoked when it injects, so that's why I ended up making it a
 factory rather than a service. Right now it's working, and when testing the controller that class is easy to mock so I'm happy so far.
 
+
