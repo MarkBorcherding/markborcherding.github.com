@@ -6,7 +6,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
 markdown: redcarpet
-server: true
+server: false
 lsi: true
 paginate: 3
 
