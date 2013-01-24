@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "AngularJS, CoffeeScript and Classes"
+description: ""
+category:
+tags: []
 ---
+{% include JB/setup %}
 
 I've been working on an [AngularJS](http://angularjs.org/) project lately and have really come to like it. While I'm at it, I'm
 giving [CoffeScript](http://coffeescript.org/) a real try (again). AngularJS has been really great so far. It feels really light
@@ -12,7 +16,7 @@ things are working, are easy to read and test, so I really can't complain too mu
 My latest challenge was to make my CoffeeScript classes available inside my AngularJS controllers. I had a class with an embdedded
 class such as this:
 
-{% highlight coffeescript %}
+{% highlight  coffeescript %}
 controller 'MyCtrl', ($scope) ->
 
   class Map
@@ -37,7 +41,7 @@ to be either since it is a constant...but happens to be a function. So here it g
 
 I created a new factory service (using the helpers from my `angular-seed` project).
 
-{% highlight coffeescript %}
+{% highlight  coffeescript %}
 
 factory 'Map', ->
   class Map
@@ -50,7 +54,7 @@ factory 'Map', ->
 
 Now I can just inject it on the controller.
 
-{% highlight coffeescript %}
+{% highlight  coffeescript %}
 controller 'MyCtrl', ($scope, Map) ->
 
   map = new Map($scope.some_data)
