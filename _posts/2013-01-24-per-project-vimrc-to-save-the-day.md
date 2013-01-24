@@ -24,7 +24,7 @@ NERDTree looks like in my Vim.
 
 So I care about three of those directories: `app`, `src`, and `test`. To some extent I care about `bin`,
 but the others I don't really care about. Now I don't use NERDTree that much. It's nice and useful, but
-the _more_ useful plugin for me is [CtlrP](https://github.com/kien/ctrlp.vim).
+the _more_ useful plugin for me is [CtrlP](https://github.com/kien/ctrlp.vim).
 
 CtrlP is awesome. I love it, but with 4 copies of my source, I'm constantly selecting the wrong version
 of my file. I wanted to ignore them from both CtrlP and NERDTree, but I don't want to _always_ ignore
