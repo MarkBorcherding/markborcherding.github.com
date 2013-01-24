@@ -1,6 +1,17 @@
 <article>
-  <h1>{{ post.title }}</h1>
-  <div>
-    {{ post.content }}
+  <div class="row">
+    <div class='one columns'>
+      <span class='month'>Jun</span>
+      <span class="day">5</span><br/>
+      <span class="year">2013</span>
+    </div>
+    <h2 class='eleven columns'>
+      <a href="{{post.url}}.html">{{ post.title }}</a>
+    </h2>
+  </div>
+  <div class='row'>
+    <div class='seven columns offset-by-one'>
+      {{ post.content }}
+    </div>
   </div>
 </article>
