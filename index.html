@@ -3,9 +3,8 @@ layout: default
 title: Fooberry.com
 overview: true
 ---
-
-<section class='posts'>
-  <article></article>
-  <article></article>
+<section class='posts row'>
+  {% for post in paginator.posts %}
+    {% include post_summary.html %}
+  {% endfor %}
 </section>
-
