@@ -28,7 +28,7 @@ the _more_ useful plugin for me is [CtrlP](https://github.com/kien/ctrlp.vim).
 
 CtrlP is awesome. I love it, but with 4 copies of my source, I'm constantly selecting the wrong version
 of my file. I wanted to ignore them from both CtrlP and NERDTree, but I don't want to _always_ ignore
-`development`. Luckily my buddy turned me onto a possible solution; Per-project .
+`development`. Luckily my buddy turned me onto a possible solution; Per-project `.vimrc` files.
 
 There are plent of articles on the Google that will help you set it up, but
 [here](http://damien.lespiau.name/blog/2009/03/18/per-project-vimrc/)'s what I did and is so far working great.
