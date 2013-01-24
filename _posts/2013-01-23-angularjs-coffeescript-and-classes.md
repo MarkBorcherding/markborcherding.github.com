@@ -16,7 +16,7 @@ things are working, are easy to read and test, so I really can't complain too mu
 My latest challenge was to make my CoffeeScript classes available inside my AngularJS controllers. I had a class with an embdedded
 class such as this:
 
-```CoffeeScript
+{% highlight  coffeescript %}
 controller 'MyCtrl', ($scope) ->
 
   class Map
@@ -30,7 +30,7 @@ controller 'MyCtrl', ($scope) ->
   $scope.toggle_map_type = ->
     map.toggle_map_type()
 
-```
+{% endhighlight %}
 
 So that does exactly what I want it to do, but the presence of the `Map` class in there clutters up its essence. I would like to move that
 out of the controller. I could just toss it in a top level file, maybe create a nice namespace for it, but Angular has the ability
@@ -41,7 +41,7 @@ to be either since it is a constant...but happens to be a function. So here it g
 
 I created a new factory service (using the helpers from my `angular-seed` project).
 
-```CoffeeScript
+{% highlight  coffeescript %}
 
 factory 'Map', ->
   class Map
@@ -50,17 +50,17 @@ factory 'Map', ->
 
     toggle_map_type: ->
       # do whatever
-```
+{% endhighlight %}
 
 Now I can just inject it on the controller.
 
-```CoffeeScript
+{% highlight  coffeescript %}
 controller 'MyCtrl', ($scope, Map) ->
 
   map = new Map($scope.some_data)
   $scope.toggle_map_type = ->
     map.toggle_map_type()
-```
+{% endhighlight %}
 
 Done. Is that actually a service? I don't want the constructor function invoked when it injects, so that's why I ended up making it a
 factory rather than a service. Right now it's working, and when testing the controller that class is easy to mock so I'm happy so far.
