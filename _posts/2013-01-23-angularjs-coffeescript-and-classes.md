@@ -5,7 +5,6 @@ description: ""
 category:
 tags: []
 ---
-{% include JB/setup %}
 
 I've been working on an [AngularJS](http://angularjs.org/) project lately and have really come to like it. While I'm at it, I'm
 giving [CoffeScript](http://coffeescript.org/) a real try (again). AngularJS has been really great so far. It feels really light

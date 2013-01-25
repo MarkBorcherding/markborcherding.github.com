@@ -6,6 +6,7 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "redcarpet"
 gem 'guard-jekyll'
+gem 'gsl'
 gem 'rb-fsevent', '~> 0.9.1'
 
 # Development web server
@@ -15,3 +16,4 @@ gem 'sinatra-index'
 # CSS Gems
 gem 'compass'
 gem 'zurb-foundation'
+gem 'guard-compass'

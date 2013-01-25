@@ -2,10 +2,7 @@
 layout: post
 title: "Per Project .vimrc to save the day"
 description: ""
-category:
-tags: []
 ---
-{% include JB/setup %}
 
 As I've been mentioning, I'm working on a Trigger.io project. Things have been going great except one thing.
 It copies files around the project directory as you build your project for multiple platforms. Here is what

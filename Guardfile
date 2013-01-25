@@ -4,3 +4,7 @@
 guard 'jekyll' do
   watch /.*/
 end
+
+guard 'compass' do
+  watch /^sass\/(.*)\.s[ac]ss/
+end
