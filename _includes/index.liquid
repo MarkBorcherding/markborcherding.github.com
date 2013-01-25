@@ -1,5 +1,53 @@
-<section class=''>
+<section class='row'>
   {% for post in paginator.posts %}
     {% include post_summary.liquid %}
   {% endfor %}
+
+
+  <div class='eight columns offset-by-one'>
+
+<!-- Pagination links -->
+    <ul class="pagination">
+
+      {% if paginator.previous_page %}
+        <li class="arrow"><a href="/page{{paginator.previous_page}}">&laquo;</a></li>
+      {% else %}
+        <li class="arrow unavailable"><a href="">&laquo;</a></li>
+      {% endif %}
+
+      {% if paginator.page == 1 %}
+        <li class='current'><a href="">1</a></li>
+      {% else %}
+        <li class="current"><a href="">1</a></li>
+      {% endif %}
+
+    {% for count in (2..paginator.total_pages) %}
+    <li class="page">
+      {% if count == paginator.page %}
+      <span class="current-page">{{count}}</span>
+      {% else %}
+      <a href="/page{{count}}">{{count}}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>       <span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+
+        {% if paginator.next_page %}
+          <a href="/page{{paginator.next_page}}" class="next ">Next</a>
+        {% else %}
+            <span class="next ">Next</span>
+          {% endif %}
+</div>
+      <li class="arrow unavailable"><a href="">&laquo;</a></li>
+      <li class="current"><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li class="unavailable"><a href="">&hellip;</a></li>
+      <li><a href="">12</a></li>
+      <li><a href="">13</a></li>
+      <li class="arrow"><a href="">&raquo;</a></li>
+    </ul>
+
+  </div>
 </section>

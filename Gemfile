@@ -10,6 +10,7 @@ gem 'rb-fsevent', '~> 0.9.1'
 
 # Development web server
 gem 'sinatra'
+gem 'sinatra-index'
 
 # CSS Gems
 gem 'compass'
