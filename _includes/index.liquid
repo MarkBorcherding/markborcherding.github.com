@@ -1,13 +1,11 @@
-<section class='row'>
 
-  {% assign link_title = true %}
-  {% for post in paginator.posts %}
-    {% include post_summary.liquid %}
-  {% endfor %}
+{% assign link_title = true %}
+{% for post in paginator.posts %}
+  {% include post_summary.liquid %}
+{% endfor %}
 
 
-  <div class='eight columns offset-by-one'>
-    {% include pagination.liquid %}
-  </div>
+<div class='eight columns offset-by-one'>
+  {% include pagination.liquid %}
+</div>
 
-</section>
