@@ -6338,3 +6338,30 @@ header.site-header {
 header.site-header a {
   color: #222222;
 }
+/* line 5, ../sass/_header.scss */
+header.site-header h2 {
+  font-size: 10px;
+}
+
+/* line 9, ../sass/app.scss */
+div.eleven.columns::before, .row div.columns.eleven::before {
+  content: "";
+  border-right: solid 1px #c5c5c5;
+  height: 100%;
+  position: absolute;
+  left: -4.6%;
+}
+
+/* line 18, ../sass/app.scss */
+.sidebar {
+  background: white;
+  padding: 20px;
+  z-index: 2;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* line 26, ../sass/app.scss */
+pre {
+  margin-bottom: 17px;
+}
