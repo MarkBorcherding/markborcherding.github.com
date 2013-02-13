@@ -20,6 +20,7 @@ markdown: redcarpet
 server: false
 lsi: true
 paginate: 5
+production_url : http://fooberry.com
 
 
 # Themes are encouraged to use these universal variables
