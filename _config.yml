@@ -19,7 +19,7 @@ pygments: true
 markdown: redcarpet
 server: false
 lsi: true
-paginate: 10
+paginate: 5
 
 
 # Themes are encouraged to use these universal variables

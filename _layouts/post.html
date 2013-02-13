@@ -2,18 +2,22 @@
 
 <article>
   <div class="row">
-    <div class='one columns'>
-      <span class='month'>Jun</span>
-      <span class="day">5</span><br/>
-      <span class="year">2013</span>
+    <div class='one columns sidebar'>
+      <span class='month'>{{ page.date | date: "%d" }}</span> <br/>
+      <span class='day'>{{ page.date | date: "%b" }}</span> <br/>
+      <span class='year'>{{ page.date | date: "%Y" }}</span>
     </div>
-    <h2 class='eleven columns'>
-      {{ page.title }}
-    </h2>
-  </div>
-  <div class='row'>
-    <div class='seven columns offset-by-one'>
-      {{ content }}
+    <div class='eleven columns'>
+      <div class='row'>
+        <h2 class='twelve columns'>
+          {{ page.title }}
+        </h2>
+      </div>
+      <div class='row'>
+        <div class='seven columns'>
+          {{ content }}
+        </div>
+      </div>
     </div>
   </div>
 </article>
