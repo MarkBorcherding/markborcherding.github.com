@@ -5,7 +5,6 @@ description: ""
 category:
 tags: []
 ---
-{% include JB/setup %}
 
 I've really been digging [Trigger.io](http://trigger.io). We're really rocking our app. There are few areas that Trigger could definitely improve. Debug
 logging is one of those. They have their own tool called Catalyst which exports the developer console of the simulator's app to your browser. I haven't

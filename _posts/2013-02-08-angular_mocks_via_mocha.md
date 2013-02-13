@@ -5,8 +5,6 @@ description: ""
 category:
 tags: []
 ---
-{% include JB/setup %}
-
 
 Yeoman has been great so far. So has Angular. I’m really enjoying working with both. One of the headache is Yeoman brakes from Angular’s
 convention of using Jasmine + Testacular and replaces it with Mocha. I don’t really have information to make an opinion of either, but
