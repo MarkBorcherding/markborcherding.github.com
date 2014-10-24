@@ -26,30 +26,31 @@ layout: default
 </header>
 
 <script>
-    (function ($) {
-        "use strict";
+(function ($) {
+  "use strict";
 
-        $(document).ready(function(){
+  $(document).ready(function(){
 
-            var $window = $(window),
-                $image = $('.teaserimage-image');
-            $window.on('scroll', function() {
-                var top = $window.scrollTop();
+    var $window = $(window),
+    $image = $('.teaserimage-image');
+    $window.on('scroll', function() {
+      var top = $window.scrollTop();
 
-                if (top < 0 || top > 1500) { return; }
-                $image
-                    .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
-                    .css('opacity', 1-Math.max(top/700, 0));
-            });
-            $window.trigger('scroll');
+      if (top < 0 || top > 1500) { return; }
+      $image
+        .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+        .css('opacity', 1-Math.max(top/700, 0));
+    });
+    $window.trigger('scroll');
 
-        });
+  });
 
-    }(jQuery));
+}(jQuery));
 </script>
 
 <main class="content" role="main">
 
+    {% if site.tags.featured %}
     <h5 class="index-headline featured"><span>Featured</span></h5>
 
     <div class="container featured">
@@ -70,6 +71,7 @@ layout: default
         </article>
       {% endfor %}
     </div>
+    {% endif %}
 
     <h5 class="index-headline normal"><span>Regular</span></h5>
 
