@@ -12,7 +12,7 @@ image_credit: https://www.flickr.com/photos/paukrus/9826882836
 
   Recently we started logging everything to STDOUT and pipeing to `syslog`.  This is simpler than collating several different log files.  Checkout [Better Rails Logging](https://pooreffort.com/blog/better-rails-logging/) for more motivations behind logging _everything_ to STDOUT.
 
-  Making the applications log to STDOU was the easy part. It's built into Ruby.
+  Making the applications log to STDOUT was the easy part. It's built into Ruby.
 
   {% highlight ruby %}
   Rails.logger = Logger.new(STDOUT)
