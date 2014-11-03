@@ -19,6 +19,8 @@ author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
+excerpt_separator: ""
+
 url: http://fooberry.com
 baseurl: ""
 

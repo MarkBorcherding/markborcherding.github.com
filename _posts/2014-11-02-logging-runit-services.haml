@@ -1,0 +1,35 @@
+---
+layout: post
+title: Logging Runit Services
+published: true
+categories: devops
+tags: runit devops
+image: /assets/article_images/2014-11-02-logging-runit-services/logs.jpg
+image_credit: https://www.flickr.com/photos/paukrus/9826882836
+---
+
+#hi
+
+:markdown
+  {% highlight bash %}
+  # location of named pipe
+  named_pipe=/tmp/$$.tmp
+
+  # remove pipe on the exit signal
+  trap "rm -f $named_pipe" EXIT
+
+  # create named pipe
+  mknod $named_pipe p
+
+  # start logger process in background with stdin coming from
+  # named pipe also tell logger to append the script name to the
+  # syslog messages
+
+  # so we know where they came from
+  logger $named_pipe -t "nginx" &
+
+  # redirect stderr and stdout to named_pipe
+  exec 1$named_pipe 2>&1
+  exec nginx -g "daemon off;"
+  {% endhighlight %}
+
