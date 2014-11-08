@@ -44,7 +44,7 @@ exec my_app"
 
 This works and is rather straightforward, but there is an easier way.
 
-Create the directory in `/etc/service/my_app/log`. In there drop an executable script called `run` that looks like this.
+Create the directory `/etc/service/my_app/log`. In there drop an executable script called `run` that looks like this.
 
 {% highlight bash %}
 #!/bin/bash
@@ -57,5 +57,5 @@ And change your start script to be the following.
 exec my_app 2>&1
 {% endhighlight %}
 
-The `log` program will receive the STDOUT of the runit service.
+The `log` program will receive the STDOUT of the runit service and that output will end up on syslog.
 
