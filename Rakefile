@@ -8,10 +8,9 @@ def images_dir(slug)
   File.join('assets', 'article_images', slug)
 end
 
-
 desc 'Create a new post'
 task :post do
-  title = ENV['TITLE'] || ask("Title of the post: ")
+  title = ENV['TITLE'] || ask('Title of the post: ')
   slug = "#{Date.today}-#{title.downcase.gsub(/[^\w]+/, '-')}"
 
   Dir.mkdir(File.join(working_dir, images_dir(slug)))
@@ -22,7 +21,7 @@ task :post do
     slug + '.haml'
   )
 
-  File.open(file, "w") do |f|
+  File.open(file, 'w') do |f|
     f << <<-EOS.gsub(/^    /, '')
  ---
  layout: post
@@ -36,5 +35,5 @@ task :post do
     EOS
   end
 
-  system ("#{ENV['EDITOR']} #{file}")
+  system("#{ENV['EDITOR']} #{file}")
 end
