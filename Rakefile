@@ -18,19 +18,20 @@ task :post do
   file = File.join(
     File.dirname(__FILE__),
     '_posts',
-    slug + '.haml'
+    slug + '.markdown'
   )
 
   File.open(file, 'w') do |f|
     f << <<-EOS.gsub(/^    /, '')
- ---
- layout: post
- title: #{title}
- published: false
- categories:
- tags:
- # image: #{images_dir(slug)}
- ---
+---
+layout: post
+title: #{title}
+published: false
+categories:
+tags:
+# image: /#{images_dir(slug)}
+# image_credit:
+---
 
     EOS
   end
