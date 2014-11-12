@@ -7,7 +7,6 @@ tags: dotfiles
 image: /assets/article_images/2014-11-08-dotfiles-using-stow/dots.jpg
 image_credit: https://www.flickr.com/photos/dygatiqah/2337492290
 ---
-
 There a lot of examples out there about how to manage dotfiles. There are also many examples out there on how to install them using custom shell scripts or other tools. They all have their ups and down.  I've tried plenty of them. I've also worked on complicated scripts with their own conventions to make sure things are symlinked properly, with the correct names, in the correct location.
 
 I've found [Stow](http://www.gnu.org/software/stow/) works best for me.
