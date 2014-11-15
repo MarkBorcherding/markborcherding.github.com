@@ -38,11 +38,19 @@ $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif
   max-width: 900px;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: $font-sans;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-font-feature-settings: "liga=1, dlig=1";
   -ms-font-feature-settings: "liga", "dlig";
@@ -716,21 +724,40 @@ body {
   display: none;
 }
 
+$code-border-width: 2px;
+%code {
+  background-color: #eeeeff;
+  border-color: #e8e8e8;
+  border-width: $code-border-width 0px;
+  border-style: solid;
+  font-size: 15px;
+}
+
 pre,
 code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eeeeff;
+  @extend %code;
 }
 
-code {
-  padding: 1px 5px;
-}
+code { padding: 1px 5px; }
 
 pre {
+  &:after, &:before {
+    @extend %code;
+    bottom:0;
+    content: "";
+    display: block;
+    margin: -$code-border-width 0;
+    position: absolute;
+    top:0;
+    width: 2000px;
+    z-index: -1;
+  }
+  &:after {  left: 500px; }
+  &:before { right: 0; }
+
+  overflow-x: visible;
   padding: 8px 12px;
-  overflow-x: scroll;
+  position: relative;
   > code {
     border: 0;
     padding-right: 0;
