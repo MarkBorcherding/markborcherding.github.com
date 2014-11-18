@@ -5,6 +5,8 @@
 
 @import "bourbon/bourbon";
 @import "colors/colors";
+@import url(http://fonts.googleapis.com/css?family=Fira+Mono);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
 .cf {
   @include clearfix;
@@ -14,6 +16,7 @@ $rs: 16px;
 
 $font-serif: Linux Libertine;
 $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+$font-mono: 'Source Code Pro', monospace;
 
 @mixin respond-to($breakpoint) {
   @media only screen and (max-width: $breakpoint + px) {
@@ -731,6 +734,7 @@ $code-border-width: 2px;
   border-width: $code-border-width 0px;
   border-style: solid;
   font-size: 15px;
+  font-family: $font-mono;
 }
 
 pre,
@@ -741,6 +745,10 @@ code {
 code { padding: 1px 5px; }
 
 pre {
+  overflow-x: visible;
+  padding: 8px 12px;
+  position: relative;
+
   &:after, &:before {
     @extend %code;
     bottom:0;
@@ -752,12 +760,9 @@ pre {
     width: 2000px;
     z-index: -1;
   }
+
   &:after {  left: 500px; }
   &:before { right: 0; }
-
-  overflow-x: visible;
-  padding: 8px 12px;
-  position: relative;
   > code {
     border: 0;
     padding-right: 0;
